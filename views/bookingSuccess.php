@@ -7,7 +7,7 @@
 
     <div class="jumbotron">
         <h1>Thank you for your booking.</h1> 
-        <h1>We're looking forward to seeing you!</h1>
+        <!-- <h1>We're looking forward to seeing you!</h1> -->
         <p class="h3">Here is your Booking #<? echo $sql = "SELECT booking_No. FROM booking" ?></p>
         <p class="h4">If you want to recreate your booking# put your Booking # and Name , Then qlick the button.</p>
 
