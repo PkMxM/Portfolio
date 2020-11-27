@@ -37,31 +37,34 @@
             // echo $name, $checkin, $checkout;
 
             echo 
-                "<div class='jumbotron'>
-                    <form action='../action/bookingSuccess.php' method='post'>
-                        <p>NAME : $name </p><input type='hidden' name='name' value='$name'><br>
+                "<div class='container mt-4'>
+                    <div class='jumbotron'>
+                        <form action='../action/bookingSuccess.php' method='post'>
+                            <p class='h5'>NAME : $name </p><input type='hidden' name='name' value='$name'><br>
 
-                        <P>Date of CHECK IN : $checkin </p><input type='hidden' name='checkin' value='$checkin'> <br>
+                            <P class='h5'>Date of CHECK IN : $checkin </p><input type='hidden' name='checkin' value='$checkin'> <br>
 
-                        <p>Date of CHECK OUT : $checkout </p><input type='hidden' name='checkout' value='$checkout'> </br>
+                            <p class='h5'>Date of CHECK OUT : $checkout </p><input type='hidden' name='checkout' value='$checkout'> </br>
 
-                        <P>Num Of Night : "  .$confirm->getNight(). " night</p>
-                        <p>Type of Room / Num of Rooms : $room <input type='hidden' name='room' value='$room'>/ $numOfRoom </p><input type='hidden' name='numRoom' value='$numOfRoom'><br>
+                            <P class='h5'>Num Of Night : "  .$confirm->getNight(). " night</p>
+                            <p class='h5'>Type of Room / Num of Rooms : $room <input type='hidden' name='room' value='$room'>/ $numOfRoom </p><input type='hidden' name='numRoom' value='$numOfRoom'><br>
 
-                        <p>Number of People : $numOfPeople </p><br>
-                        <p>Requests : $request </p><input type='hidden' name='request' value='$request'><br>
+                            <p class='h5'>Number of People : $numOfPeople </p><br>
+                            <p class='h5'>Requests : $request </p><input type='hidden' name='request' value='$request'><br>
 
-                        <h3 class='display-5 text-danger'>Total Amount : $totalAmount </h3><br>
-                        <div class='text-right'>
-                            <button type='submit' name='book' class='btn btn-success text-white px-5'>Book Now</button>
-                            <a href='booking.php' class='btn btn-warning text-white btm-sm px-5'>Reset</a>
-                        </div>
-                        <input type='hidden' name='adult' value='$adult'>
-                        <input type='hidden' name='child' value='$child'>
-                        <input type='hidden' name='infant' value='$infant'>
-                        <input type='hidden' name='contactNo' value='$contactNo'>
-                        <input type='hidden' name='email' value='$email'>
-                    </form>
+                            <h3 class='display-5 text-danger'>Total Amount : $totalAmount </h3><br>
+                            <input type='hidden'  name='totalAmount' value='$totalAmount'>
+                            <div class='text-right'>
+                                <button type='submit' name='book' class='btn btn-success text-white px-5'>Book Now</button>
+                                <a href='booking.php' class='btn btn-warning text-white btm-sm px-5'>Reset</a>
+                            </div>
+                            <input type='hidden' name='adult' value='$adult'>
+                            <input type='hidden' name='child' value='$child'>
+                            <input type='hidden' name='infant' value='$infant'>
+                            <input type='hidden' name='contactNo' value='$contactNo'>
+                            <input type='hidden' name='email' value='$email'>
+                        </form>
+                    </div>
                 </div>";
 
             }

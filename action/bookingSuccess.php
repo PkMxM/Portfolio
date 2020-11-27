@@ -13,11 +13,11 @@
         $contactNo = $_POST['contactNo'];
         $email = $_POST['email']; 
         $request = $_POST['request'];
+        $totalAmount =$_POST['totalAmount'];
 
         $confirm = new Confirm();
-        $confirm->createBooking($name, $room, $adult, $child, $infant, $contactNo,$email,$checkin, $checkout, $request); 
+        $confirm->createBooking($name, $room, $numOfRoom, $adult, $child, $infant, $contactNo,$email,$checkin, $checkout, $request,$totalAmount); 
     
     }
 
-    session_start();
-
+    
